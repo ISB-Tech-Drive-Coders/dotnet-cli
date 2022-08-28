@@ -14,4 +14,4 @@ DotNet is a very universal , we can up our script eventually to be able to make 
 
 ## Goal Inperson workflow
 
-User will plug in a usb thumb drive and open the directory. Then will right click "script 1" (bash) and run as admin to install .net and all script dependencies. Then user will right click the  will ask for sudo password, then will present options for the 
+User will plug in a usb thumb drive and open the directory. Then will right click "script 1" (bash) and run as admin to install .net and all script dependencies. Then user will right click the second script (dotnet). The script will ask for sudo password, then will present options for the installation of basic utilities.
