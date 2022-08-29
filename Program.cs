@@ -16,22 +16,20 @@ namespace sudopswrd
         static void Main(string[] args)
         {
             Console.WriteLine("Thank you for using the ISBTD Windows Configurator");
-            Console.WriteLine("What is this PC's password? (Needed for sudo commands)");
+            Console.WriteLine("What is this PC's password? Needed for sudo commands");
             //sudopswrd is the password to be used for sudo commands
             var sudopswrd = Console.ReadLine();
-            Console.WriteLine("What is the directory for the USB Drive? (In Format of  C:\ApplicationRepository  )");
-            //applicationrepository is the directory where the .exe apps are stored
-            var applicationrepository = Console.ReadLine();
-            Console.WriteLine("Recorded Sudo Password was"sudopswrd". Recorded directory for USB Drive was"applicationrespository);
+            Console.WriteLine(@"What is the directory for the USB Drive? In Format of  C:\Drivepath");
+            //apprepo is the directory where the .exe apps are stored
+            var apprepo = Console.ReadLine();
+            Console.WriteLine("Recorded Sudo Password was {sudopswrd}");
+            Console.WriteLine("Recorded directory for USB Drive was {apprepo}");
         }
     }
-}
 // Following code credit  Saurabh Rai
 // https://www.c-sharpcorner.com/article/silent-installation-of-applications-using-C-Sharp/
   
 /*
-namespace SilentInstallation
-{  
     class Program  
     {  
         static void Main(string[] args)  
@@ -116,9 +114,7 @@ namespace SilentInstallation
             }  
         }  
         */
-namespace thnksfruse
-{
-    class Program
+    class exit
     {
         static void Main(string[] args)
         {
