@@ -35,7 +35,7 @@ namespace isbtddotnetconig
             Console.WriteLine(@"-What is the directory for the USB Drive? In Format of  C:\Drivepath");
             string apprepo = Console.ReadLine();
             
-            
+
             
 
             //Confirmation
@@ -55,7 +55,7 @@ namespace isbtddotnetconig
                     }
                 else if(usrconf == false)
                     {
-                        Console.WriteLine("You answered no, thanks for using the ISBTD Windows Configurator. Version {0}", configversion);
+                        Console.WriteLine("You answered false, thanks for using the ISBTD Windows Configurator. Version {0}", configversion);
                     }
                 else
                     {
