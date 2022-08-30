@@ -16,7 +16,6 @@ namespace isbtddotnetconig
 
 {
     class datacollection
-    {
         static void Main(string[] args)
         {  
             string configversion = "prebuild";
@@ -28,17 +27,26 @@ namespace isbtddotnetconig
             //sudopswrd is the password to be used for sudo commands
             string sudopswrd = Console.ReadLine();
 
+
+            
+            string apprepo = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+            /* For manual user entry of the program path
             Console.WriteLine(" ");
             Console.WriteLine(@"-What is the directory for the USB Drive? In Format of  C:\Drivepath");
-            //apprepo is the directory where the .exe apps are stored
+            apprepo is the directory where the .exe apps are stored
             string apprepo = Console.ReadLine();
-            
-            Console.WriteLine(" ");
-            Console.WriteLine("-Recorded Sudo Password was {0}", sudopswrd);
-            //Console.WriteLine($"Recorded directory for USB Drive was {apprepo});
-            Console.WriteLine("-Recorded directory for USB Drive was {0}", apprepo);
+            */
+
             
 
+            //Confirmation
+            Console.WriteLine(" ");
+            Console.WriteLine("-Recorded Sudo Password was {0}", sudopswrd);
+            Console.WriteLine("-Recorded directory for USB Drive was {0}", apprepo);
+            */
+
+
+            Console.WriteLine(" ")
 	        Console.WriteLine("Was this correct? true or false?");
             bool usrconf = bool.Parse(Console.ReadLine());
                 if(usrconf == true)
