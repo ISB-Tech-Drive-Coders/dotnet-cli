@@ -1,4 +1,8 @@
-﻿/*
+﻿//Commented code for testing UI on MacOS
+
+using System.Reflection.Emit;
+using System.Data;
+//using Internal;
 using System;  
 using System.Collections.Generic;  
 using System.Collections.ObjectModel;  
@@ -6,32 +10,78 @@ using System.IO;
 using System.Linq;  
 using System.Text;  
 using System.Threading.Tasks;  
-using System.Management.Automation;
-*/
-namespace sudopswrd
+//using System.Management.Automation;
+
+namespace isbtddotnetconig
 
 {
-    class Program
+    class datacollection
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("Thank you for using the ISBTD Windows Configurator");
-            Console.WriteLine("What is this PC's password? (Needed for sudo commands)");
+        {  
+            string configversion = "prebuild";
+            //blank lines for ease of viewing
+            Console.WriteLine(@"-Thank you for using the ISBTD Windows Configurator. Version {0}", configversion);
+
+            Console.WriteLine(" ");
+            Console.WriteLine(@"-What is this PC's password? Needed for sudo commands");
             //sudopswrd is the password to be used for sudo commands
-            var sudopswrd = Console.ReadLine();
-            Console.WriteLine("What is the directory for the USB Drive? (In Format of  C:\ApplicationRepository  )");
-            //applicationrepository is the directory where the .exe apps are stored
-            var applicationrepository = Console.ReadLine();
-            Console.WriteLine("Recorded Sudo Password was"sudopswrd". Recorded directory for USB Drive was"applicationrespository);
+            string sudopswrd = Console.ReadLine();
+
+            Console.WriteLine(" ");
+            Console.WriteLine(@"-What is the directory for the USB Drive? In Format of  C:\Drivepath");
+            //apprepo is the directory where the .exe apps are stored
+            string apprepo = Console.ReadLine();
+            
+            Console.WriteLine(" ");
+            Console.WriteLine("-Recorded Sudo Password was {0}", sudopswrd);
+            //Console.WriteLine($"Recorded directory for USB Drive was {apprepo});
+            Console.WriteLine("-Recorded directory for USB Drive was {0}", apprepo);
+            
+
+	        Console.WriteLine("Was this correct? true or false?");
+            bool usrconf = bool.Parse(Console.ReadLine());
+                if(usrconf == true)
+	                {
+	                    //confirmed yes, in this space script for installing
+                        Console.WriteLine("This function hasn't been made yet");
+                        Environment.Exit(0);
+                    }
+                else if(usrconf == false)
+                    {
+                        Console.WriteLine("You answered no, thanks for using the ISBTD Windows Configurator. Version {0}", configversion);
+                    }
+                else
+                    {
+                        Console.WriteLine("Error. Exception reached, usrconf was not true or false.");
+                        Console.WriteLine("Do you want to try again? true or false?");
+                        bool usrconftryagain = bool.Parse(Console.ReadLine());
+                        if(usrconftryagain == true)
+                            {
+                                Console.WriteLine("Sorry, this feature isn't available yet.");
+                            }
+                        else
+                            if(usrconftryagain == false)
+                                {
+                                    Console.WriteLine("The program will exit now");
+                                    Environment.Exit(0);
+                                }
+                            else
+                                {
+                                    Console.WriteLine("Sorry, an exception occurred. The program will exit");
+                                    Environment.Exit(0);
+                                }
+                    }
+
+
         }
     }
-}
+
+
 // Following code credit  Saurabh Rai
 // https://www.c-sharpcorner.com/article/silent-installation-of-applications-using-C-Sharp/
   
 /*
-namespace SilentInstallation
-{  
     class Program  
     {  
         static void Main(string[] args)  
@@ -116,17 +166,13 @@ namespace SilentInstallation
             }  
         }  
         */
-namespace thnksfruse
-{
-    class Program
+    class exit
     {
-        static void Main(string[] args)
+        static void Exit(string[] args)
         {
             //Code for end of program
             Console.WriteLine("Thank you for using the ISBTD Windows Configurator");
-            Console.Write($"{Environment.NewLine}Press any key to exit...");
-            Console.ReadKey(true);
+            Environment.Exit(0);
         }
-        
     }
 }
