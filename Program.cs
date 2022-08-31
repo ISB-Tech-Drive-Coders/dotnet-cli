@@ -28,28 +28,36 @@ namespace isbtddotnetconig
             //sudopswrd is the password to be used for sudo commands
             string sudopswrd = Console.ReadLine();
 
+
+            //for windows
+            //string apprepo = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
             Console.WriteLine(" ");
             Console.WriteLine(@"-What is the directory for the USB Drive? In Format of  C:\Drivepath");
-            //apprepo is the directory where the .exe apps are stored
             string apprepo = Console.ReadLine();
             
-            Console.WriteLine(" ");
-            Console.WriteLine("-Recorded Sudo Password was {0}", sudopswrd);
-            //Console.WriteLine($"Recorded directory for USB Drive was {apprepo});
-            Console.WriteLine("-Recorded directory for USB Drive was {0}", apprepo);
+
             
 
+            //Confirmation
+            Console.WriteLine(" ");
+            Console.WriteLine("-Recorded Sudo Password was {0}", sudopswrd);
+            Console.WriteLine("-Recorded directory for USB Drive was {0}", apprepo);
+
+
+            Console.WriteLine(" ");
 	        Console.WriteLine("Was this correct? true or false?");
             bool usrconf = bool.Parse(Console.ReadLine());
                 if(usrconf == true)
 	                {
 	                    //confirmed yes, in this space script for installing
+                        Console.WriteLine("What type of installation do you want?");
+                        string installtype = Console.ReadLine();
                         Console.WriteLine("This function hasn't been made yet");
                         Environment.Exit(0);
                     }
                 else if(usrconf == false)
                     {
-                        Console.WriteLine("You answered no, thanks for using the ISBTD Windows Configurator. Version {0}", configversion);
+                        Console.WriteLine("You answered false, thanks for using the ISBTD Windows Configurator. Version {0}", configversion);
                     }
                 else
                     {

@@ -6,6 +6,7 @@
     <RootNamespace>dotnet-CLI-Setup</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <runtimeidentifiers>win10-x64;osx.10.12-x64</runtimeidentifiers>
   </PropertyGroup>
 
 </Project>

@@ -21,10 +21,10 @@
 /Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/obj/Debug/net6.0/.net-CLI-Main-Setup.dll
 /Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/obj/Debug/net6.0/refint/.net-CLI-Main-Setup.dll
 /Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/obj/Debug/net6.0/.net-CLI-Main-Setup.pdb
-/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/bin/Debug/net6.0/.net-CLI-Main-Setup
 /Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/bin/Debug/net6.0/.net-CLI-Main-Setup.deps.json
-/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/bin/Debug/net6.0/.net-CLI-Main-Setup.runtimeconfig.json
 /Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/bin/Debug/net6.0/.net-CLI-Main-Setup.dll
 /Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/bin/Debug/net6.0/.net-CLI-Main-Setup.pdb
-/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/obj/Debug/net6.0/.net-CLI-Main-Setup.genruntimeconfig.cache
 /Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/obj/Debug/net6.0/ref/.net-CLI-Main-Setup.dll
+/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/bin/Debug/net6.0/.net-CLI-Main-Setup
+/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/bin/Debug/net6.0/.net-CLI-Main-Setup.runtimeconfig.json
+/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/obj/Debug/net6.0/.net-CLI-Main-Setup.genruntimeconfig.cache
