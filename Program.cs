@@ -50,6 +50,8 @@ namespace isbtddotnetconig
                 if(usrconf == true)
 	                {
 	                    //confirmed yes, in this space script for installing
+                        Console.WriteLine("What type of installation do you want?");
+                        string installtype = Console.ReadLine();
                         Console.WriteLine("This function hasn't been made yet");
                         Environment.Exit(0);
                     }
