@@ -79,7 +79,7 @@ namespace dotnetcli
                     {
                         Console.WriteLine("Error. Exception reached, usrconf was not true or false.");
                         Console.WriteLine("Do you want to try again? y/n?");
-                        string usrconftryagain = (Console.ReadLine();
+                        string usrconftryagain = Console.ReadLine();
                         if(usrconftryagain == "y")
                             {
                                 Console.WriteLine("Sorry, this feature isn't available yet.");
