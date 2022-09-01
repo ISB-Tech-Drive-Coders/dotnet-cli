@@ -44,23 +44,29 @@ namespace dotnetcli
             Console.WriteLine("-Recorded directory for USB Drive was {0}", apprepo);
 
 
-            Console.WriteLine(" ");
-	        Console.WriteLine("Was this correct? y or n?");
+	        Console.WriteLine("-Was this correct? y/n?");
             //bool usrconf = bool.Parse(Console.ReadLine());
             string usrconf = Console.ReadLine();
                 if(usrconf == "y")
 	                {
 	                    //confirmed yes, in this space script for installing
-                        Console.WriteLine("What type of installation do you want?");
+                        Console.WriteLine(" ");
+                        Console.WriteLine("-What type of installation do you want?");
+                        Console.WriteLine("-Options: full, debug, light,");
                         string installtype = Console.ReadLine();
                             if(installtype == "full")
                                 {
-                                    Console.WriteLine(@"This function hasn't been made yet. Thank you for using the ISBTD Windows Configurator; version {0}", configversion);
+                                    Console.WriteLine(@"This function hasn't been made yet. Thank you for using the ISBTD Windows Configurator. Version {0}", configversion);
                                     Environment.Exit(0);
                                 }
                             else if(installtype == "debug")
                                 {
-                                    Console.WriteLine("This function hasn't been made yet");
+                                    Console.WriteLine("This function hasn't been made yet. Thank you for using the ISBTD Windows Configurator. Version {0}");
+                                    Environment.Exit(0);
+                                }
+                            else if(installtype == "light")
+                                {
+                                    Console.WriteLine("This function hasn't been made yet. Thank you for using the ISBTD Windows Configurator. Version {0}");
                                     Environment.Exit(0);
                                 }
                         
@@ -72,14 +78,14 @@ namespace dotnetcli
                 else
                     {
                         Console.WriteLine("Error. Exception reached, usrconf was not true or false.");
-                        Console.WriteLine("Do you want to try again? true or false?");
-                        bool usrconftryagain = bool.Parse(Console.ReadLine());
-                        if(usrconftryagain == true)
+                        Console.WriteLine("Do you want to try again? y/n?");
+                        string usrconftryagain = (Console.ReadLine();
+                        if(usrconftryagain == "y")
                             {
                                 Console.WriteLine("Sorry, this feature isn't available yet.");
                             }
                         else
-                            if(usrconftryagain == false)
+                            if(usrconftryagain == "n")
                                 {
                                     Console.WriteLine("The program will exit now");
                                     Environment.Exit(0);
@@ -123,7 +129,7 @@ namespace dotnetcli
                         Console.WriteLine("File Name: {0}", fileName);  
                         Console.WriteLine("File name with path : {0}", fileNameWithPath);  
                         //Deploy application  
-                        Console.WriteLine("Wanna install {0} application on this VM?   
+                        Console.WriteLine("Wanna install {0} application on this computer?   
                             Press any key to contiune.  
                             ", fileName);  
                             Console.ReadKey(); DeployApplications(fileNameWithPath); Console.ReadLine();  
@@ -159,7 +165,7 @@ namespace dotnetcli
                                     Console.WriteLine(outputItem.BaseObject.ToString() + "\n");  
                                 }  
                             }  
-  
+
                             if (powerShell.Streams.Error.Count > 0)  
                             {  
                                 string temp = powerShell.Streams.Error.First().ToString();  
