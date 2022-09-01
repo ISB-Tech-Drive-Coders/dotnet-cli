@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;  
 //using System.Management.Automation;
 
-namespace isbtddotnetconig
+namespace dotnetcli
 
 {
     class datacollection
@@ -45,17 +45,27 @@ namespace isbtddotnetconig
 
 
             Console.WriteLine(" ");
-	        Console.WriteLine("Was this correct? true or false?");
-            bool usrconf = bool.Parse(Console.ReadLine());
-                if(usrconf == true)
+	        Console.WriteLine("Was this correct? y or n?");
+            //bool usrconf = bool.Parse(Console.ReadLine());
+            string usrconf = Console.ReadLine();
+                if(usrconf == "y")
 	                {
 	                    //confirmed yes, in this space script for installing
                         Console.WriteLine("What type of installation do you want?");
                         string installtype = Console.ReadLine();
-                        Console.WriteLine("This function hasn't been made yet");
-                        Environment.Exit(0);
+                            if(installtype == "full")
+                                {
+                                    Console.WriteLine(@"This function hasn't been made yet. Thank you for using the ISBTD Windows Configurator; version {0}", configversion);
+                                    Environment.Exit(0);
+                                }
+                            else if(installtype == "debug")
+                                {
+                                    Console.WriteLine("This function hasn't been made yet");
+                                    Environment.Exit(0);
+                                }
+                        
                     }
-                else if(usrconf == false)
+                else if(usrconf == "n")
                     {
                         Console.WriteLine("You answered false, thanks for using the ISBTD Windows Configurator. Version {0}", configversion);
                     }
