@@ -10,7 +10,6 @@ DotNet is a very universal , we can up our script eventually to be able to make 
 
 User will plug in a usb thumb drive and open the directory. Then will right click "script 1" (bash) and run as admin to install .net and all script dependencies. Then user will right click the second script (dotnet). The script will ask for sudo password, then will present options for the installation of basic utilities.
 
-
 ## Getting Started
 
 Download and install the .net 6 sdk from [Microsoft](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
@@ -18,4 +17,3 @@ Download and install the .net 6 sdk from [Microsoft](https://dotnet.microsoft.co
 Use  dotnet run  to run the program, arguments for the command can be found [here](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
 For MacOS, leave the code as such; but for windows you can uncomment every multiline comment you see. The notes all have single line // comments.
-
