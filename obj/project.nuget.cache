@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vNemQ054UVa/I8DEkqIWvFgfAAvM1QNomGRZU8OAY0d0zCdCVlTU5lO5QixMdP296j9jvDara9fOzRaGf7Szmg==",
+  "dgSpecHash": "THyIUyoe4ZLqVs9g5bToQ01MGUObpsURKPyvVwzI5M8Rx0Xu2qmkfC74EEpN9hadwqVTj1GwXQV7mqTGwDMEMA==",
   "success": true,
-  "projectFilePath": "/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/.net-CLI-Main-Setup.csproj",
-  "expectedPackageFiles": [
-    "/Users/ravinderolivierdadiala/.nuget/packages/microsoft.netcore.app.runtime.osx-x64/6.0.8/microsoft.netcore.app.runtime.osx-x64.6.0.8.nupkg.sha512",
-    "/Users/ravinderolivierdadiala/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-x64/6.0.8/microsoft.aspnetcore.app.runtime.osx-x64.6.0.8.nupkg.sha512"
-  ],
+  "projectFilePath": "/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/dotnetcli.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

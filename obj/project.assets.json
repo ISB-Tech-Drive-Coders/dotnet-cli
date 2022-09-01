@@ -1,8 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {},
-    "net6.0/osx-x64": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
@@ -14,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/.net-CLI-Main-Setup.csproj",
-      "projectName": ".net-CLI-Main-Setup",
-      "projectPath": "/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/.net-CLI-Main-Setup.csproj",
+      "projectUniqueName": "/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/dotnetcli.csproj",
+      "projectName": "dotnetcli",
+      "projectPath": "/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/dotnetcli.csproj",
       "packagesPath": "/Users/ravinderolivierdadiala/.nuget/packages/",
       "outputPath": "/Users/ravinderolivierdadiala/Desktop/Coding/ISBSED-Coding/CLI Setup/dotnet-CLI-Setup/obj/",
       "projectStyle": "PackageReference",
@@ -55,27 +54,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Runtime.osx-x64",
-            "version": "[6.0.8, 6.0.8]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.osx-x64",
-            "version": "[6.0.8, 6.0.8]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "osx-x64": {
-        "#import": []
       }
     }
   }
