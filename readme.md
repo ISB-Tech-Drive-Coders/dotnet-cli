@@ -1,6 +1,4 @@
-# .net-CLI-Main-Setup
-
-Note: MacOS will probably hide this from showing up in the finder because it is . directory, so just press Command + Shift + . to enter if using finder. Then Press Again to stop displaying of hidden and . files/directories.
+# dotnet-cli
 
 ## Why .Net
 
